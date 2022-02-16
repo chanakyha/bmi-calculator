@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <h1 class="text-center m-4">Welcome to Chan BMI Calculator</h1>
+    <h1 class="text-center m-2">Welcome to Chan BMI Calculator</h1>
     <div class="container">
         <div class="card main-card">
             <h5 class="card-header text-center">BMI Calculator</h5>
@@ -25,10 +25,10 @@
                     <h5 class="card-title text-danger">Fields with (*) are Required</h5>
                     <p class="card-text">
                     <div class="mb-3">
-                        <label for="height" class="form-label">Enter your Height <span
+                        <label for="height-container" class="form-label">Enter your Height <span
                                 class="text-danger">*</span></label>
-                        <div id="height" class="input-group mb-3">
-                            <input type="text" class="form-control">
+                        <div id="height-container" class="input-group mb-3">
+                            <input id="height" type="text" class="form-control">
                             <select name="" id="height-units" class="form-select form-control">
                                 <option value="null" hidden>Unit</option>
                                 <option value="cm">cm</option>
@@ -37,11 +37,11 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="height" class="form-label">Enter your Weight <span
+                        <label for="weight-container" class="form-label">Enter your Weight <span
                                 class="text-danger">*</span></label>
-                        <div id="height" class="input-group mb-3">
-                            <input type="text" class="form-control">
-                            <select name="" id="height-units" class="form-select form-control">
+                        <div id="weight-container" class="input-group mb-3">
+                            <input id="weight" type="text" class="form-control">
+                            <select name="" id="weight-units" class="form-select form-control">
                                 <option value="null" hidden>Unit</option>
                                 <option value="kg">kg</option>
                                 <option value="lbs">lbs</option>
@@ -49,11 +49,12 @@
                         </div>
                     </div>
                     </p>
-                    <a href="#" class="btn btn-warning">Find BMI</a>
+                    <button id="find-bmi" class="btn btn-warning">Find BMI</button>
                 </div>
-                <hr>
-                <div class="displaying-bmi">
-                    <h5 class="card-title">Your BMI after Calculating: <span class="badge bg-success">25.4</span>
+                <hr id="hr">
+                <div id="error-alerts" class="alert alert-danger"></div>
+                <div id="displaying-bmi">
+                    <h5 class="card-title">Your BMI after Calculating: <span id="final-bmi" class="badge">25.4</span>
                     </h5>
 
                     <table class="table-bordered text-center">
@@ -76,6 +77,7 @@
             </div>
         </div>
     </div>
+
 
 
     <!-- BOOTSTRAP JAVASCRIPT -->

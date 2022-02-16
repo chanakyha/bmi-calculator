@@ -11,10 +11,12 @@
   margin-top: 4em;
 }
 
-#height > input {
+#weight-container > input,
+#height-container > input {
   width: 90%;
 }
-#height > select {
+#weight-container > select,
+#height-container > select {
   width: auto;
 }
 
@@ -27,7 +29,8 @@
     width: 85%;
     top: 50%;
   }
-  #height > input {
+  #weight-container > input,
+  #height-container > input {
     width: 70%;
   }
 }
@@ -47,7 +50,8 @@ body {
   }
 
   .fields,
-  .displaying-bmi {
+  #displaying-bmi,
+  .display-alert {
     padding: 2em;
   }
 
