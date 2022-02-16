@@ -1,0 +1,66 @@
+.main-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.container {
+  margin-top: 4em;
+}
+
+#height > input {
+  width: 90%;
+}
+#height > select {
+  width: auto;
+}
+
+/* Mobile Phones */
+@media screen and (max-width: 425px) {
+  .main-card {
+    padding: 0;
+    margin-top: 2em;
+    position: absolute;
+    width: 85%;
+    top: 50%;
+  }
+  #height > input {
+    width: 70%;
+  }
+}
+
+body {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(255, 209, 67, 1) 0%,
+    rgba(255, 145, 83, 1) 90%
+  );
+}
+
+/* Laptops and Tv */
+@media screen and (max-width: 2560px) and (min-width: 1024px) {
+  .card {
+    width: 80%;
+  }
+
+  .fields,
+  .displaying-bmi {
+    padding: 2em;
+  }
+
+  table {
+    border: 1px solid black;
+  }
+
+  th {
+    text-transform: uppercase;
+  }
+
+  td,
+  th {
+    padding: 0.5em 1em;
+  }
+}
